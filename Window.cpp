@@ -136,29 +136,6 @@ void Window::ManejaTeclado(GLFWwindow* window, int key, int code, int action, in
 		glfwSetWindowShouldClose(window, GL_TRUE);
 	}
 
-	if (key == GLFW_KEY_W)
-	{
-		theWindow->muevexCaballero += 1.0;
-		theWindow->rotacionCaballero = 0.0f;
-	}
-	if (key == GLFW_KEY_S)
-	{
-		theWindow->muevexCaballero -= 1.0;
-		theWindow->rotacionCaballero = 180.0f;
-	}
-
-	if (key == GLFW_KEY_A)
-	{
-		theWindow->muevezCaballero -= 1.0;
-		theWindow->rotacionCaballero = 90.0f;
-	}
-	if (key == GLFW_KEY_D)
-	{
-		theWindow->muevezCaballero += 1.0;
-		theWindow->rotacionCaballero = 270.0f;
-	}
-
-
 	// Tecla L para prender/apagar la última luz puntual 
 	if (key == GLFW_KEY_L && action == GLFW_PRESS)
 	{
